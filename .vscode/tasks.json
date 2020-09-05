@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "0.0.1",
+    "tasks": [
+      {
+        "type": "npm",
+        "script": "install:typescript",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": []
+      },
+      {
+        "type": "npm",
+        "script": "watch",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [
+          "$tsc-watch"
+        ],
+        "isBackground": true,
+        "runOptions": {
+          "runOn": "folderOpen"
+        }
+      }
+    ]
+  }

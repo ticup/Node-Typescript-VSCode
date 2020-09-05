@@ -1,0 +1,23 @@
+{
+    "version": "0.0.1",
+    "configurations": [
+      {
+        "name": "Launch Server",
+        "type": "node",
+        "request": "launch",
+        "args": [],
+        "preLaunchTask": null,
+        "runtimeExecutable": null,
+        "runtimeArgs": ["--nolazy"],
+        "env": {
+          "deletable": ""
+        },
+        "smartStep": true,
+        "sourceMaps": true,
+        "console": "integratedTerminal",
+        "cwd": "${workspaceRoot}",
+        "program": "${workspaceFolder}/src/index.ts",
+        "outFiles": ["${workspaceFolder}/build/**/*.js"]
+      }]
+  }
+  
